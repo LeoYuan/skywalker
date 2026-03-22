@@ -1,0 +1,9 @@
+{
+  "name": "vpnservice",
+  "version": "1.0.0",
+  "description": "VPN service module.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {}
+}

@@ -1,0 +1,54 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/leo/.ohos/config/default_skywalker_FTwUZAhSEEynB1P5FGrm_D188wO-51BJf13J9ph4mek=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B8FB58682E87145CEF2D10C6B8290E6E9E34EC024A0A7131D946A22D99B2C853A9A5D9231007290",
+          "profile": "/Users/leo/.ohos/config/default_skywalker_FTwUZAhSEEynB1P5FGrm_D188wO-51BJf13J9ph4mek=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/leo/.ohos/config/default_skywalker_FTwUZAhSEEynB1P5FGrm_D188wO-51BJf13J9ph4mek=.p12",
+          "storePassword": "0000001BEDE8D403BE840E7528BB51269970F8644E47AB4CD25D0C3496DEF8B97D6347E5C7DB0E3717B94C"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "targetSdkVersion": "5.0.0(12)"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "vpnservice",
+      "srcPath": "./vpnservice",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

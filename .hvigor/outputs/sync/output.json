@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/leo/workspace/artifacts/skywalker/entry/build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/leo/workspace/artifacts/skywalker/entry/src/main",
+        "RESOURCES_PATH": [
+          "/Users/leo/workspace/artifacts/skywalker/entry/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/cache/default/default@CompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/cache/default/default@CompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/hap_metadata/default/output_metadata.json",
+          "SOURCE_MAP_DIR": "/Users/leo/workspace/artifacts/skywalker/entry/build/default/intermediates/source_map/default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default",
+          "runtimeOS": "HarmonyOS"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-vpnservice": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/leo/workspace/artifacts/skywalker/vpnservice/src/main",
+        "RESOURCES_PATH": [
+          "/Users/leo/workspace/artifacts/skywalker/vpnservice/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/cache/default/default@CompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/cache/default/default@CompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/hap_metadata/default/output_metadata.json",
+          "SOURCE_MAP_DIR": "/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/source_map/default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "externalNativeOptions": {
+          "path": "./src/main/cpp/CMakeLists.txt",
+          "arguments": "",
+          "cppFlags": ""
+        }
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {
+        "externalNativeOptions": {
+          "path": "./src/main/cpp/CMakeLists.txt",
+          "arguments": "",
+          "cppFlags": ""
+        }
+      },
+      "targets": [
+        {
+          "name": "default",
+          "runtimeOS": "HarmonyOS"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "/Users/leo/workspace/artifacts/skywalker/build",
+    "BUNDLE_NAME": "com.skywalker.proxy",
+    "VERSION_CODE": 1000000,
+    "VERSION_NAME": "1.0.0",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "/Users/leo/workspace/artifacts/skywalker/build/outputs/default"
+    },
+    "MODULES": [
+      {
+        "name": "entry",
+        "srcPath": "/Users/leo/workspace/artifacts/skywalker/entry",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "/Users/leo/workspace/artifacts/skywalker"
+      },
+      {
+        "name": "vpnservice",
+        "srcPath": "/Users/leo/workspace/artifacts/skywalker/vpnservice",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "/Users/leo/workspace/artifacts/skywalker"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [
+          {
+            "name": "default",
+            "type": "HarmonyOS",
+            "material": {
+              "certpath": "/Users/leo/.ohos/config/default_skywalker_FTwUZAhSEEynB1P5FGrm_D188wO-51BJf13J9ph4mek=.cer",
+              "keyAlias": "debugKey",
+              "keyPassword": "0000001B8FB58682E87145CEF2D10C6B8290E6E9E34EC024A0A7131D946A22D99B2C853A9A5D9231007290",
+              "profile": "/Users/leo/.ohos/config/default_skywalker_FTwUZAhSEEynB1P5FGrm_D188wO-51BJf13J9ph4mek=.p7b",
+              "signAlg": "SHA256withECDSA",
+              "storeFile": "/Users/leo/.ohos/config/default_skywalker_FTwUZAhSEEynB1P5FGrm_D188wO-51BJf13J9ph4mek=.p12",
+              "storePassword": "0000001BEDE8D403BE840E7528BB51269970F8644E47AB4CD25D0C3496DEF8B97D6347E5C7DB0E3717B94C"
+            }
+          }
+        ],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.0.0(12)",
+            "runtimeOS": "HarmonyOS",
+            "targetSdkVersion": "5.0.0(12)"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "entry",
+          "srcPath": "./entry",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vpnservice",
+          "srcPath": "./vpnservice",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "/Users/leo/workspace/artifacts/skywalker"
+    ],
+    "BUILD_CACHE_DIR": ""
+  }
+}

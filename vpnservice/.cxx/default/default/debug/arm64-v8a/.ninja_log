@@ -1,0 +1,8 @@
+# ninja log v6
+2	203	1773380592602403745	CMakeFiles/proxy_engine.dir/src/engine_wrapper.cpp.o	8718abf594af9791
+1	205	1773380592602173922	CMakeFiles/proxy_engine.dir/src/napi_proxy_engine.cpp.o	b8bc951dc473bcc5
+205	247	1773380592805523809	/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/cmake/default/obj/arm64-v8a/libproxy_engine.so	c5fdb3393e4cbe1d
+1	6	1773391515163406089	clean	c55f32eb48221927
+2	301	1773391516327405125	CMakeFiles/proxy_engine.dir/src/engine_wrapper.cpp.o	8718abf594af9791
+2	304	1773391516327172379	CMakeFiles/proxy_engine.dir/src/napi_proxy_engine.cpp.o	b8bc951dc473bcc5
+304	346	1773391516629045287	/Users/leo/workspace/artifacts/skywalker/vpnservice/build/default/intermediates/cmake/default/obj/arm64-v8a/libproxy_engine.so	c5fdb3393e4cbe1d
